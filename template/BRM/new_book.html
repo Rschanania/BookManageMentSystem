@@ -1,0 +1,16 @@
+{% extends 'BRM/layout.html' %}
+
+  {% block body %}
+
+
+   <div id="main">
+   	<h2> Add new Book Record </h2>
+   	<form method='POST' action='/BRM/add'>
+       {% csrf_token %}
+       {{form}}
+       <input type="submit" value="Add">
+
+   </form> 
+   </div>
+
+{% endblock %}
